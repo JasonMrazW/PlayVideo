@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/bo/Documents/study/playAV/codes/AVPlayer/src/SDLActivity.cpp
+SDLActivity.hpp
+/Users/bo/Documents/study/playAV/codes/AVPlayer/src/SDLActivity.hpp
+
+/Users/bo/Documents/study/playAV/codes/AVPlayer/src/SDLActivity.hpp
+stdio.h
+-
+SDL2/SDL.h
+-
+SDL2_image/SDL_image.h
+-
+
