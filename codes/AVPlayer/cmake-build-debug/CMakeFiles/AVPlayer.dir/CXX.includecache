@@ -17,4 +17,8 @@ SDL2/SDL.h
 -
 SDL2_image/SDL_image.h
 -
+iostream
+-
+fstream
+-
 

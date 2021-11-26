@@ -2,7 +2,7 @@
 #include "SDLActivity.hpp"
 
 int main() {
-    std::cout << "Hello, World!" << std::endl;
+    std::cout << "start!" << std::endl;
     CApp app;
     return app.OnExecute();
 }

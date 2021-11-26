@@ -11,6 +11,8 @@
 #include <stdio.h>
 #include <SDL2/SDL.h>
 #include <SDL2_image/SDL_image.h>
+#include <iostream>
+#include <fstream>
 
 // ============================================================================
 // [CApp]
@@ -42,6 +44,7 @@ private:
     SDL_Renderer*    renderer;
     SDL_Surface*     surface;
     SDL_Texture*     texture;
+    char*           yuvData;
 
     // Initialize application
     int             OnInit();
@@ -57,6 +60,8 @@ private:
     
     // Called to render the app.
     void             OnRender();
+
+    static char * loadYuvData(char *yuvFilePath, int width, int height);
 };
 
 #endif /* SDLActivity_hpp */

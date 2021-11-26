@@ -45,7 +45,6 @@
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="/Library/Frameworks/SDL2.framework/Headers"/>
-					<Add directory="/opt/homebrew/include/SDL2"/>
 					<Add directory="/Library/Frameworks/SDL2_image.framework/Headers"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
 					<Add directory="/usr/local/include"/>
@@ -69,7 +68,6 @@
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="/Library/Frameworks/SDL2.framework/Headers"/>
-					<Add directory="/opt/homebrew/include/SDL2"/>
 					<Add directory="/Library/Frameworks/SDL2_image.framework/Headers"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
 					<Add directory="/usr/local/include"/>
@@ -99,12 +97,6 @@
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 		<Unit filename="/Users/bo/Documents/study/playAV/codes/AVPlayer/CMAKE/FindSDL2.cmake">
-			<Option virtualFolder="CMake Files\CMAKE\"/>
-		</Unit>
-		<Unit filename="/Users/bo/Documents/study/playAV/codes/AVPlayer/CMAKE/FindSDL2Mixer.cmake">
-			<Option virtualFolder="CMake Files\CMAKE\"/>
-		</Unit>
-		<Unit filename="/Users/bo/Documents/study/playAV/codes/AVPlayer/CMAKE/FindSDL2TTF.cmake">
 			<Option virtualFolder="CMake Files\CMAKE\"/>
 		</Unit>
 		<Unit filename="/Users/bo/Documents/study/playAV/codes/AVPlayer/CMAKE/FindSDL2_IMAGE.cmake">

@@ -8,8 +8,6 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
   "../CMAKE/FindSDL2.cmake"
-  "../CMAKE/FindSDL2Mixer.cmake"
-  "../CMAKE/FindSDL2TTF.cmake"
   "../CMAKE/FindSDL2_IMAGE.cmake"
   "../CMakeLists.txt"
   "CMakeFiles/3.20.2/CMakeCCompiler.cmake"

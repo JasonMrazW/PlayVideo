@@ -103,9 +103,6 @@ AVPlayer_EXTERNAL_OBJECTS =
 bin/AVPlayer: CMakeFiles/AVPlayer.dir/src/main.cpp.o
 bin/AVPlayer: CMakeFiles/AVPlayer.dir/src/SDLActivity.cpp.o
 bin/AVPlayer: CMakeFiles/AVPlayer.dir/build.make
-bin/AVPlayer: /opt/homebrew/lib/libSDL2_ttf.dylib
-bin/AVPlayer: /opt/homebrew/lib/libSDL2_ttf.dylib
-bin/AVPlayer: /opt/homebrew/lib/libSDL2_mixer.dylib
 bin/AVPlayer: CMakeFiles/AVPlayer.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/bo/Documents/study/playAV/codes/AVPlayer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable bin/AVPlayer"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/AVPlayer.dir/link.txt --verbose=$(VERBOSE)

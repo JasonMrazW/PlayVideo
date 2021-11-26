@@ -16,6 +16,10 @@
 const int SCREEN_WIDTH     = 800;
 const int SCREEN_HEIGHT    = 600;
 
+const int file_width = 177;
+const int file_height = 177;
+char *const filePath = "resources/out_420p.yuv";
+
 
 CApp::CApp() :
     running(false)
@@ -42,11 +46,11 @@ int CApp::OnInit()
 
     if (window != NULL) {
         renderer = SDL_CreateRenderer(window, -1, SDL_RENDERER_ACCELERATED);
-        IMG_Init(IMG_INIT_JPG);
-        surface = IMG_Load("resources/bg.jpg");
-        IMG_Quit();
-        
-        texture = SDL_CreateTextureFromSurface(renderer, surface);
+        //surface = IMG_Load("resources/floor.png");
+
+        yuvData = loadYuvData(filePath, file_width, file_height);
+
+        texture = SDL_CreateTexture(renderer, SDL_PIXELFORMAT_IYUV, SDL_TEXTUREACCESS_STREAMING, file_width, file_height);
     }
     
     // Success
@@ -115,11 +119,37 @@ void CApp::OnUpdate()
 
 void CApp::OnRender()
 {
+    SDL_UpdateTexture(texture, nullptr, yuvData, file_width);
+
     SDL_RenderClear(renderer);
 
     // Do your drawing here
-    SDL_RenderCopy(renderer, texture, NULL, NULL);
+
+    SDL_RenderCopy(renderer, texture, nullptr, nullptr);
     
     SDL_RenderPresent(renderer);
+}
+
+char *CApp::loadYuvData(char *yuvFilePath, int width, int height) {
+
+
+    //read file
+    std::ifstream ifstream;
+    ifstream.open(yuvFilePath, std::ios::in | std::ios::binary);
+    // read yuv file to binary data
+    // default yuv420p
+    ifstream.seekg(0,std::ios_base::end);
+    int length = ifstream.tellg();
+    if (length < 0) {
+        return NULL;
+    }
+    ifstream.seekg(0, std::ios_base::beg);
+    int frameSize = width * height * 3/2;
+    char* buffer = new char[length];
+
+    ifstream.read(buffer, length);
+    //close file
+    ifstream.close();
+    return buffer;
 }
 
