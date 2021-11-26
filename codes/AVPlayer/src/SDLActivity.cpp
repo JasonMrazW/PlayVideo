@@ -16,9 +16,9 @@
 const int SCREEN_WIDTH     = 800;
 const int SCREEN_HEIGHT    = 600;
 
-const int file_width = 177;
-const int file_height = 177;
-char *const filePath = "resources/out_420p.yuv";
+const int file_width = 1280;
+const int file_height = 720;
+char *const filePath = "resources/out_nv21.yuv";
 
 
 CApp::CApp() :

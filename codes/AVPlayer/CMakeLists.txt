@@ -65,7 +65,7 @@ ENDIF()
 Message("")
 
 file(COPY resources DESTINATION ${CMAKE_RUNTIME_OUTPUT_DIRECTORY})
-MESSAGE("xxx")
+MESSAGE("2222")
 # ------- End Finds ------ #
 # ------- Inc & Link ---- #
 IF(APPLE)
