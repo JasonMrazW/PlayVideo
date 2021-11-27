@@ -44,19 +44,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /Volumes/CLion/CLion.app/Contents/bin/cmake/mac/bin/cmake
+CMAKE_COMMAND = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake
 
 # The command to remove a file.
-RM = /Volumes/CLion/CLion.app/Contents/bin/cmake/mac/bin/cmake -E rm -f
+RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/bo/Documents/study/playAV/codes/AVPlayer
+CMAKE_SOURCE_DIR = /Users/bo/Documents/study/PlayVideo/codes/AVPlayer
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/bo/Documents/study/playAV/codes/AVPlayer/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/bo/Documents/study/PlayVideo/codes/AVPlayer/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/AVPlayer.dir/depend.make
@@ -68,43 +68,58 @@ include CMakeFiles/AVPlayer.dir/flags.make
 
 CMakeFiles/AVPlayer.dir/src/main.cpp.o: CMakeFiles/AVPlayer.dir/flags.make
 CMakeFiles/AVPlayer.dir/src/main.cpp.o: ../src/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bo/Documents/study/playAV/codes/AVPlayer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/AVPlayer.dir/src/main.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/AVPlayer.dir/src/main.cpp.o -c /Users/bo/Documents/study/playAV/codes/AVPlayer/src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bo/Documents/study/PlayVideo/codes/AVPlayer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/AVPlayer.dir/src/main.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/AVPlayer.dir/src/main.cpp.o -c /Users/bo/Documents/study/PlayVideo/codes/AVPlayer/src/main.cpp
 
 CMakeFiles/AVPlayer.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/AVPlayer.dir/src/main.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/bo/Documents/study/playAV/codes/AVPlayer/src/main.cpp > CMakeFiles/AVPlayer.dir/src/main.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/bo/Documents/study/PlayVideo/codes/AVPlayer/src/main.cpp > CMakeFiles/AVPlayer.dir/src/main.cpp.i
 
 CMakeFiles/AVPlayer.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/AVPlayer.dir/src/main.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/bo/Documents/study/playAV/codes/AVPlayer/src/main.cpp -o CMakeFiles/AVPlayer.dir/src/main.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/bo/Documents/study/PlayVideo/codes/AVPlayer/src/main.cpp -o CMakeFiles/AVPlayer.dir/src/main.cpp.s
 
 CMakeFiles/AVPlayer.dir/src/SDLActivity.cpp.o: CMakeFiles/AVPlayer.dir/flags.make
 CMakeFiles/AVPlayer.dir/src/SDLActivity.cpp.o: ../src/SDLActivity.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bo/Documents/study/playAV/codes/AVPlayer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/AVPlayer.dir/src/SDLActivity.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/AVPlayer.dir/src/SDLActivity.cpp.o -c /Users/bo/Documents/study/playAV/codes/AVPlayer/src/SDLActivity.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bo/Documents/study/PlayVideo/codes/AVPlayer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/AVPlayer.dir/src/SDLActivity.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/AVPlayer.dir/src/SDLActivity.cpp.o -c /Users/bo/Documents/study/PlayVideo/codes/AVPlayer/src/SDLActivity.cpp
 
 CMakeFiles/AVPlayer.dir/src/SDLActivity.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/AVPlayer.dir/src/SDLActivity.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/bo/Documents/study/playAV/codes/AVPlayer/src/SDLActivity.cpp > CMakeFiles/AVPlayer.dir/src/SDLActivity.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/bo/Documents/study/PlayVideo/codes/AVPlayer/src/SDLActivity.cpp > CMakeFiles/AVPlayer.dir/src/SDLActivity.cpp.i
 
 CMakeFiles/AVPlayer.dir/src/SDLActivity.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/AVPlayer.dir/src/SDLActivity.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/bo/Documents/study/playAV/codes/AVPlayer/src/SDLActivity.cpp -o CMakeFiles/AVPlayer.dir/src/SDLActivity.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/bo/Documents/study/PlayVideo/codes/AVPlayer/src/SDLActivity.cpp -o CMakeFiles/AVPlayer.dir/src/SDLActivity.cpp.s
+
+CMakeFiles/AVPlayer.dir/src/parser/splite_util.cpp.o: CMakeFiles/AVPlayer.dir/flags.make
+CMakeFiles/AVPlayer.dir/src/parser/splite_util.cpp.o: ../src/parser/splite_util.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bo/Documents/study/PlayVideo/codes/AVPlayer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/AVPlayer.dir/src/parser/splite_util.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/AVPlayer.dir/src/parser/splite_util.cpp.o -c /Users/bo/Documents/study/PlayVideo/codes/AVPlayer/src/parser/splite_util.cpp
+
+CMakeFiles/AVPlayer.dir/src/parser/splite_util.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/AVPlayer.dir/src/parser/splite_util.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/bo/Documents/study/PlayVideo/codes/AVPlayer/src/parser/splite_util.cpp > CMakeFiles/AVPlayer.dir/src/parser/splite_util.cpp.i
+
+CMakeFiles/AVPlayer.dir/src/parser/splite_util.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/AVPlayer.dir/src/parser/splite_util.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/bo/Documents/study/PlayVideo/codes/AVPlayer/src/parser/splite_util.cpp -o CMakeFiles/AVPlayer.dir/src/parser/splite_util.cpp.s
 
 # Object files for target AVPlayer
 AVPlayer_OBJECTS = \
 "CMakeFiles/AVPlayer.dir/src/main.cpp.o" \
-"CMakeFiles/AVPlayer.dir/src/SDLActivity.cpp.o"
+"CMakeFiles/AVPlayer.dir/src/SDLActivity.cpp.o" \
+"CMakeFiles/AVPlayer.dir/src/parser/splite_util.cpp.o"
 
 # External object files for target AVPlayer
 AVPlayer_EXTERNAL_OBJECTS =
 
 bin/AVPlayer: CMakeFiles/AVPlayer.dir/src/main.cpp.o
 bin/AVPlayer: CMakeFiles/AVPlayer.dir/src/SDLActivity.cpp.o
+bin/AVPlayer: CMakeFiles/AVPlayer.dir/src/parser/splite_util.cpp.o
 bin/AVPlayer: CMakeFiles/AVPlayer.dir/build.make
 bin/AVPlayer: CMakeFiles/AVPlayer.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/bo/Documents/study/playAV/codes/AVPlayer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable bin/AVPlayer"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/bo/Documents/study/PlayVideo/codes/AVPlayer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable bin/AVPlayer"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/AVPlayer.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -116,6 +131,6 @@ CMakeFiles/AVPlayer.dir/clean:
 .PHONY : CMakeFiles/AVPlayer.dir/clean
 
 CMakeFiles/AVPlayer.dir/depend:
-	cd /Users/bo/Documents/study/playAV/codes/AVPlayer/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/bo/Documents/study/playAV/codes/AVPlayer /Users/bo/Documents/study/playAV/codes/AVPlayer /Users/bo/Documents/study/playAV/codes/AVPlayer/cmake-build-debug /Users/bo/Documents/study/playAV/codes/AVPlayer/cmake-build-debug /Users/bo/Documents/study/playAV/codes/AVPlayer/cmake-build-debug/CMakeFiles/AVPlayer.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/bo/Documents/study/PlayVideo/codes/AVPlayer/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/bo/Documents/study/PlayVideo/codes/AVPlayer /Users/bo/Documents/study/PlayVideo/codes/AVPlayer /Users/bo/Documents/study/PlayVideo/codes/AVPlayer/cmake-build-debug /Users/bo/Documents/study/PlayVideo/codes/AVPlayer/cmake-build-debug /Users/bo/Documents/study/PlayVideo/codes/AVPlayer/cmake-build-debug/CMakeFiles/AVPlayer.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/AVPlayer.dir/depend
 

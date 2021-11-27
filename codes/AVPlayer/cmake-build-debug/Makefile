@@ -48,19 +48,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /Volumes/CLion/CLion.app/Contents/bin/cmake/mac/bin/cmake
+CMAKE_COMMAND = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake
 
 # The command to remove a file.
-RM = /Volumes/CLion/CLion.app/Contents/bin/cmake/mac/bin/cmake -E rm -f
+RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/bo/Documents/study/playAV/codes/AVPlayer
+CMAKE_SOURCE_DIR = /Users/bo/Documents/study/PlayVideo/codes/AVPlayer
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/bo/Documents/study/playAV/codes/AVPlayer/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/bo/Documents/study/PlayVideo/codes/AVPlayer/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -68,7 +68,7 @@ CMAKE_BINARY_DIR = /Users/bo/Documents/study/playAV/codes/AVPlayer/cmake-build-d
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/Volumes/CLion/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -78,7 +78,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/Volumes/CLion/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -87,9 +87,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/bo/Documents/study/playAV/codes/AVPlayer/cmake-build-debug/CMakeFiles /Users/bo/Documents/study/playAV/codes/AVPlayer/cmake-build-debug//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/bo/Documents/study/PlayVideo/codes/AVPlayer/cmake-build-debug/CMakeFiles /Users/bo/Documents/study/PlayVideo/codes/AVPlayer/cmake-build-debug//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/bo/Documents/study/playAV/codes/AVPlayer/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/bo/Documents/study/PlayVideo/codes/AVPlayer/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -177,6 +177,30 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/AVPlayer.dir/build.make CMakeFiles/AVPlayer.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+src/parser/splite_util.o: src/parser/splite_util.cpp.o
+.PHONY : src/parser/splite_util.o
+
+# target to build an object file
+src/parser/splite_util.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AVPlayer.dir/build.make CMakeFiles/AVPlayer.dir/src/parser/splite_util.cpp.o
+.PHONY : src/parser/splite_util.cpp.o
+
+src/parser/splite_util.i: src/parser/splite_util.cpp.i
+.PHONY : src/parser/splite_util.i
+
+# target to preprocess a source file
+src/parser/splite_util.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AVPlayer.dir/build.make CMakeFiles/AVPlayer.dir/src/parser/splite_util.cpp.i
+.PHONY : src/parser/splite_util.cpp.i
+
+src/parser/splite_util.s: src/parser/splite_util.cpp.s
+.PHONY : src/parser/splite_util.s
+
+# target to generate assembly for a file
+src/parser/splite_util.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/AVPlayer.dir/build.make CMakeFiles/AVPlayer.dir/src/parser/splite_util.cpp.s
+.PHONY : src/parser/splite_util.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -192,6 +216,9 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/parser/splite_util.o"
+	@echo "... src/parser/splite_util.i"
+	@echo "... src/parser/splite_util.s"
 .PHONY : help
 
 

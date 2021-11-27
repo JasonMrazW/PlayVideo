@@ -8,15 +8,15 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/bo/Documents/study/playAV/codes/AVPlayer/src/SDLActivity.cpp" "/Users/bo/Documents/study/playAV/codes/AVPlayer/cmake-build-debug/CMakeFiles/AVPlayer.dir/src/SDLActivity.cpp.o"
-  "/Users/bo/Documents/study/playAV/codes/AVPlayer/src/main.cpp" "/Users/bo/Documents/study/playAV/codes/AVPlayer/cmake-build-debug/CMakeFiles/AVPlayer.dir/src/main.cpp.o"
+  "/Users/bo/Documents/study/PlayVideo/codes/AVPlayer/src/SDLActivity.cpp" "/Users/bo/Documents/study/PlayVideo/codes/AVPlayer/cmake-build-debug/CMakeFiles/AVPlayer.dir/src/SDLActivity.cpp.o"
+  "/Users/bo/Documents/study/PlayVideo/codes/AVPlayer/src/main.cpp" "/Users/bo/Documents/study/PlayVideo/codes/AVPlayer/cmake-build-debug/CMakeFiles/AVPlayer.dir/src/main.cpp.o"
+  "/Users/bo/Documents/study/PlayVideo/codes/AVPlayer/src/parser/splite_util.cpp" "/Users/bo/Documents/study/PlayVideo/codes/AVPlayer/cmake-build-debug/CMakeFiles/AVPlayer.dir/src/parser/splite_util.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "/Library/Frameworks/SDL2.framework/Headers"
-  "/Library/Frameworks/SDL2_image.framework/Headers"
+  "/usr/local/Cellar/sdl2/2.0.16/include/SDL2"
   )
 
 # The set of dependency files which are needed:

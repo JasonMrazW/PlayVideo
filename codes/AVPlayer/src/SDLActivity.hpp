@@ -9,10 +9,11 @@
 #define SDLActivity_hpp
 
 #include <stdio.h>
-#include <SDL2/SDL.h>
-#include <SDL2_image/SDL_image.h>
+#include <SDL.h>
+
 #include <iostream>
 #include <fstream>
+#include "parser/splite_util.h"
 
 // ============================================================================
 // [CApp]
