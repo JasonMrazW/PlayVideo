@@ -17,13 +17,14 @@ void SpliteUtil::parseYUVFile(std::string filepath, YUV_FORMAT format, int width
 
     switch (format) {
         case YUV420P:
-            loadYUV420P(fileContent, width, height);
+            toGray(fileContent, width, height);
         case YUV444:
-            loadYUV444();
+            //loadYUV444();
         case NV12:
-            loadNV12();
+            //loadNV12();
         case NV21:
-            loadNV21();
+            //loadNV21();
+            break;
     }
 
 }
@@ -59,7 +60,7 @@ char *SpliteUtil::loadFile(const char *yuvFilePath, int width, int height) {
  * @param width
  * @param height
  */
-char * SpliteUtil::loadYUV420P(char *fileContent, int width, int height) {
+char * SpliteUtil::toGray(char *fileContent, int width, int height) {
     // Y分量所占得大小：width * height
     int y_length = width * height;
     // U、V 分量共同占有得大小：width * height
@@ -74,14 +75,20 @@ char * SpliteUtil::loadYUV420P(char *fileContent, int width, int height) {
     return fileContent;
 }
 
-void SpliteUtil::loadYUV444() {
-
+/**
+ * 调整YUV图片的亮度
+ * @param fileContent
+ * @param width
+ * @param height
+ * @param factor
+ * @return
+ */
+char *SpliteUtil::changeLumaForYUV420P(char *fileContent, int width, int height, float factor) {
+    int y_length = width * height;
+    for (int i = 0; i < y_length; ++i) {
+        fileContent[i] = fileContent[i] * factor;
+    }
+    return fileContent;
 }
 
-void SpliteUtil::loadNV12() {
 
-}
-
-void SpliteUtil::loadNV21() {
-
-}

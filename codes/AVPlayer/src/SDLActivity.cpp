@@ -16,9 +16,9 @@
 const int SCREEN_WIDTH     = 800;
 const int SCREEN_HEIGHT    = 600;
 
-const int file_width = 177;
-const int file_height = 177;
-const char * filePath = "resources/out_yuv420p.yuv";
+const int file_width = 970;
+const int file_height = 583;
+const char * filePath = "resources/out_bg_yuv420p.yuv";
 
 
 CApp::CApp() :
@@ -49,7 +49,7 @@ int CApp::OnInit()
 
         char * temp = SpliteUtil::loadFile(filePath, file_width, file_height);
 
-        yuvData = SpliteUtil::loadYUV420P(temp, file_width, file_height);
+        yuvData = SpliteUtil::changeLumaForYUV420P(temp, file_width, file_height, 0.2);
 
         texture = SDL_CreateTexture(renderer, SDL_PIXELFORMAT_IYUV, SDL_TEXTUREACCESS_STREAMING, file_width, file_height);
     }

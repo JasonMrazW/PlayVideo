@@ -29,13 +29,16 @@ public:
      */
     static char *       loadFile(const char *yuvFilePath, int width, int height);
 
-    static  char * loadYUV420P(char *fileContent, int width, int height);
+    static  char *      toGray(char *fileContent, int width, int height);
 
-    static void loadYUV444();
-
-    static void loadNV12();
-
-    static void loadNV21();
+    /**
+     * YUV文件亮度调整
+     * @param fileContent
+     * @param width
+     * @param height
+     * @return
+     */
+    static char*        changeLumaForYUV420P(char *fileContent, int width, int height, float factor);
 };
 
 
