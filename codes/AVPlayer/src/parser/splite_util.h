@@ -39,6 +39,16 @@ public:
      * @return
      */
     static char*        changeLumaForYUV420P(char *fileContent, int width, int height, float factor);
+
+    /**
+     * 添加简单的边框效果
+     * @param fileContent
+     * @param width
+     * @param height
+     * @param border
+     * @return
+     */
+    static char*        addBorderForYUV420P(char *fileContent, int width, int height, int border);
 };
 
 

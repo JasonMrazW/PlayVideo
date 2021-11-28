@@ -91,4 +91,25 @@ char *SpliteUtil::changeLumaForYUV420P(char *fileContent, int width, int height,
     return fileContent;
 }
 
+/**
+ * 添加简单的边框效果
+ * @param fileContent
+ * @param width
+ * @param height
+ * @param border
+ * @return
+ */
+char *SpliteUtil::addBorderForYUV420P(char *fileContent, int width, int height, int border) {
+    //逐行扫描
+    for (int i = 0; i < height; ++i) {
+        for (int j = 0; j < width; ++j) {
+
+            if (i<border || i > (height-border) || j < border || j > (width-border)) {
+                fileContent[i*width + j] = 255;
+            }
+        }
+    }
+    return fileContent;
+}
+
 
