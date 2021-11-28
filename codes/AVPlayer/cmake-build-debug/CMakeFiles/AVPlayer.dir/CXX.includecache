@@ -22,16 +22,6 @@ fstream
 parser/splite_util.h
 /Users/bo/Documents/study/PlayVideo/codes/AVPlayer/src/parser/splite_util.h
 
-/Users/bo/Documents/study/PlayVideo/codes/AVPlayer/src/main.cpp
-iostream
--
-SDLActivity.hpp
-/Users/bo/Documents/study/PlayVideo/codes/AVPlayer/src/SDLActivity.hpp
-
-/Users/bo/Documents/study/PlayVideo/codes/AVPlayer/src/parser/splite_util.cpp
-splite_util.h
-/Users/bo/Documents/study/PlayVideo/codes/AVPlayer/src/parser/splite_util.h
-
 /Users/bo/Documents/study/PlayVideo/codes/AVPlayer/src/parser/splite_util.h
 iostream
 -

@@ -49,8 +49,10 @@ int CApp::OnInit()
 
         char * temp = SpliteUtil::loadFile(filePath, file_width, file_height);
 
-        //yuvData = SpliteUtil::changeLumaForYUV420P(temp, file_width, file_height, 0.2);
-        yuvData = SpliteUtil::addBorderForYUV420P(temp, file_width, file_height, 50);
+        yuvData = SpliteUtil::toGray(temp, file_width, file_height);
+//        yuvData = SpliteUtil::changeLumaForYUV420P(temp, file_width, file_height, 0.2);
+//        yuvData = SpliteUtil::addBorderForYUV420P(temp, file_width, file_height, 50);
+
 
         texture = SDL_CreateTexture(renderer, SDL_PIXELFORMAT_IYUV, SDL_TEXTUREACCESS_STREAMING, file_width, file_height);
     }
