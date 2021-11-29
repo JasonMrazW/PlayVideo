@@ -10,9 +10,12 @@ const char * tmp_filePath = "resources/out_bg_yuv420p.yuv";
 YUVImageParser::YUVImageParser() {
 
 }
-YUVFileData *YUVImageParser::loadFile() {
+ YUVFileData *YUVImageParser::loadFile() {
     YUVFileData *fileData = new YUVFileData();
     fileData->data = loadFile(tmp_filePath, tmp_file_width, tmp_file_height);
+
+    toGray(fileData->data, tmp_file_width, tmp_file_height);
+
     fileData->width = tmp_file_width;
     fileData->height = tmp_file_height;
     fileData->format = SDL_PIXELFORMAT_IYUV;
@@ -22,8 +25,6 @@ YUVFileData *YUVImageParser::loadFile() {
 }
 
 char *YUVImageParser::loadFile(const char *yuvFilePath, int width, int height) {
-
-
     //read file
     std::ifstream ifstream;
     ifstream.open(yuvFilePath, std::ios::in | std::ios::binary);

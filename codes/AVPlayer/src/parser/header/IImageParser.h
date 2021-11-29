@@ -18,8 +18,9 @@ public:
 
     YUVFileData *yuvFileData;
 
-    virtual YUVFileData* loadFile();
+    virtual YUVFileData* loadFile() {
+        return NULL;
+    }
 };
-
 
 #endif //AVPLAYER_IIMAGEPARSER_H

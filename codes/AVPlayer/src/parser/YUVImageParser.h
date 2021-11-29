@@ -15,9 +15,7 @@ class YUVImageParser : public IImageParser{
 public:
     YUVImageParser();
 
-    YUVFileData* loadFile() {
-        return NULL;
-    }
+    virtual YUVFileData *loadFile();
     /**
      * 加载yuv文件，返回 char*指针
      * @param yuvFilePath
@@ -47,6 +45,8 @@ public:
      * @return
      */
     char*        addBorderForYUV420P(char *fileContent, int width, int height, int border);
+
+
 };
 
 #endif //AVPLAYER_YUVIMAGEPARSER_H

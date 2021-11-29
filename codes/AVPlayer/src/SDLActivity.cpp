@@ -11,15 +11,10 @@
 // ============================================================================
 // [Defines & Constants]
 // ============================================================================
-#define APPTITLE         "SDL2 Template Program"
+#define APPTITLE         "SDL Image Player by bo"
 
 const int SCREEN_WIDTH     = 800;
 const int SCREEN_HEIGHT    = 600;
-
-const int file_width = 970;
-const int file_height = 583;
-const char * filePath = "resources/out_bg_yuv420p.yuv";
-
 
 CApp::CApp() :
     running(false)
@@ -116,7 +111,7 @@ void CApp::OnUpdate()
 
 void CApp::OnRender()
 {
-    SDL_UpdateTexture(texture, nullptr, imageParser->yuvFileData, imageParser->yuvFileData->width);
+    SDL_UpdateTexture(texture, nullptr, imageParser->yuvFileData->data, imageParser->yuvFileData->width);
 
     SDL_RenderClear(renderer);
     // Do your drawing here
