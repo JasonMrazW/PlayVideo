@@ -1,0 +1,3 @@
+[submodule "codes/AVPlayer"]
+	path = codes/AVPlayer
+	url = git@github.com:JasonMrazW/AVPlayer.git
