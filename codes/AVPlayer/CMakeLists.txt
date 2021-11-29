@@ -11,8 +11,6 @@ set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_SOURCE_DIR}/CMAKE")
 set(SOURCE_FILES
         src/main.cpp src/SDLActivity.hpp
         src/SDLActivity.cpp
-        src/parser/splite_util.cpp
-        src/parser/splite_util.h
         src/parser/header/YUVFileData.h
         src/parser/header/IImageParser.h src/parser/YUVImageParser.cpp src/parser/YUVImageParser.h)
 
