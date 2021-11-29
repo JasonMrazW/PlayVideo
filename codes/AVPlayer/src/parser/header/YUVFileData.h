@@ -14,6 +14,7 @@ public:
     int width; //分辨率宽
     int height; //分辨率高
     Uint32 format; //文件格式
+    int pin;
 };
 
 

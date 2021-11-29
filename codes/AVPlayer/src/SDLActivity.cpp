@@ -13,7 +13,7 @@
 // ============================================================================
 #define APPTITLE         "SDL Image Player by bo"
 
-const int SCREEN_WIDTH     = 800;
+const int SCREEN_WIDTH     = 900;
 const int SCREEN_HEIGHT    = 600;
 
 CApp::CApp() :
@@ -111,7 +111,7 @@ void CApp::OnUpdate()
 
 void CApp::OnRender()
 {
-    SDL_UpdateTexture(texture, nullptr, imageParser->yuvFileData->data, imageParser->yuvFileData->width);
+    SDL_UpdateTexture(texture, nullptr, imageParser->yuvFileData->data, imageParser->yuvFileData->pin);
 
     SDL_RenderClear(renderer);
     // Do your drawing here

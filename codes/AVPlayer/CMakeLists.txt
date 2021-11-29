@@ -12,7 +12,7 @@ set(SOURCE_FILES
         src/main.cpp src/SDLActivity.hpp
         src/SDLActivity.cpp
         src/parser/header/YUVFileData.h
-        src/parser/header/IImageParser.h src/parser/YUVImageParser.cpp src/parser/YUVImageParser.h)
+        src/parser/header/IImageParser.h src/parser/YUVImageParser.cpp src/parser/header/YUVImageParser.h src/parser/header/RGBImageParser.h src/parser/RGBImageParser.cpp)
 
 Message("")
 Message( STATUS "SOURCE entry point : " ${SOURCE_FILES} )
@@ -38,7 +38,7 @@ file(COPY resources DESTINATION ${CMAKE_RUNTIME_OUTPUT_DIRECTORY})
 # ------- End Finds ------ #
 # ------- Inc & Link ---- #
 IF(APPLE)
-    MESSAGE("223")
+    MESSAGE("2")
     SET(CMAKE_OSX_ARCHITECTURES "arm64;" CACHE STRING "Build architectures for Mac OS X" FORCE)
 ENDIF(APPLE)
 # ------- End ----------- #

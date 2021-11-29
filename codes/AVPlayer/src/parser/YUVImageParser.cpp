@@ -2,7 +2,7 @@
 // Created by bo on 2021/11/29.
 //
 
-#include "YUVImageParser.h"
+#include "header/YUVImageParser.h"
 const int tmp_file_width = 970;
 const int tmp_file_height = 583;
 const char * tmp_filePath = "resources/out_bg_yuv420p.yuv";
@@ -12,37 +12,17 @@ YUVImageParser::YUVImageParser() {
 }
  YUVFileData *YUVImageParser::loadFile() {
     YUVFileData *fileData = new YUVFileData();
-    fileData->data = loadFile(tmp_filePath, tmp_file_width, tmp_file_height);
+    fileData->data = IImageParser::loadFile(tmp_filePath, tmp_file_width, tmp_file_height);
 
     toGray(fileData->data, tmp_file_width, tmp_file_height);
 
     fileData->width = tmp_file_width;
     fileData->height = tmp_file_height;
     fileData->format = SDL_PIXELFORMAT_IYUV;
+    fileData->pin = fileData->width; //一行像素占的空间，单位：字节
 
     yuvFileData = fileData;
     return fileData;
-}
-
-char *YUVImageParser::loadFile(const char *yuvFilePath, int width, int height) {
-    //read file
-    std::ifstream ifstream;
-    ifstream.open(yuvFilePath, std::ios::in | std::ios::binary);
-    // read yuv file to binary data
-    // default yuv420p
-    ifstream.seekg(0,std::ios_base::end);
-    int length = ifstream.tellg();
-    if (length < 0) {
-        return NULL;
-    }
-    ifstream.seekg(0, std::ios_base::beg);
-    int frameSize = width * height * 3/2;
-    char* buffer = new char[length];
-    ifstream.read(buffer, length);
-    //close file
-    ifstream.close();
-
-    return buffer;
 }
 
 /**

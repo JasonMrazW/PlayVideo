@@ -5,10 +5,8 @@
 #ifndef AVPLAYER_YUVIMAGEPARSER_H
 #define AVPLAYER_YUVIMAGEPARSER_H
 
-#include <cstdlib>
-#include <iostream>
-#include <fstream>
-#include "header/IImageParser.h"
+
+#include "IImageParser.h"
 #include <SDL_pixels.h>
 
 class YUVImageParser : public IImageParser{
@@ -16,14 +14,6 @@ public:
     YUVImageParser();
 
     virtual YUVFileData *loadFile();
-    /**
-     * 加载yuv文件，返回 char*指针
-     * @param yuvFilePath
-     * @param width
-     * @param height
-     * @return
-     */
-    static char *       loadFile(const char *yuvFilePath, int width, int height);
 
     char *      toGray(char *fileContent, int width, int height);
 
