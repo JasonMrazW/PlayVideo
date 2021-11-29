@@ -46,15 +46,7 @@ int CApp::OnInit()
 
     if (window != NULL) {
         renderer = SDL_CreateRenderer(window, -1, SDL_RENDERER_ACCELERATED);
-
-        char * temp = SpliteUtil::loadFile(filePath, file_width, file_height);
-
-        yuvData = SpliteUtil::toGray(temp, file_width, file_height);
-//        yuvData = SpliteUtil::changeLumaForYUV420P(temp, file_width, file_height, 0.2);
-//        yuvData = SpliteUtil::addBorderForYUV420P(temp, file_width, file_height, 50);
-
-
-        texture = SDL_CreateTexture(renderer, SDL_PIXELFORMAT_IYUV, SDL_TEXTUREACCESS_STREAMING, file_width, file_height);
+        texture = SDL_CreateTexture(renderer, imageParser->yuvFileData->format, SDL_TEXTUREACCESS_STREAMING, imageParser->yuvFileData->width, imageParser->yuvFileData->height);
     }
     
     // Success
@@ -73,9 +65,10 @@ void CApp::OnCleanup()
     SDL_Quit();
 }
 
-int CApp::OnExecute()
+int CApp::OnExecute(IImageParser*    parser)
 {
     // Initialize application.
+    imageParser = parser;
     int state = OnInit();
     if (state != APP_OK) {
         return state;
@@ -123,7 +116,7 @@ void CApp::OnUpdate()
 
 void CApp::OnRender()
 {
-    SDL_UpdateTexture(texture, nullptr, yuvData, file_width);
+    SDL_UpdateTexture(texture, nullptr, imageParser->yuvFileData, imageParser->yuvFileData->width);
 
     SDL_RenderClear(renderer);
     // Do your drawing here

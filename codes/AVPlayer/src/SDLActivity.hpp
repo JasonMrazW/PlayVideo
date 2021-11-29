@@ -14,6 +14,8 @@
 #include <iostream>
 #include <fstream>
 #include "parser/splite_util.h"
+#include "parser/header/YUVFileData.h"
+#include "parser/header/IImageParser.h"
 
 // ============================================================================
 // [CApp]
@@ -34,7 +36,7 @@ public:
     ~CApp();
     
     // Run application, called by your code.
-    int             OnExecute();
+    int             OnExecute(IImageParser*    imageParser);
 
 private:
     
@@ -45,7 +47,7 @@ private:
     SDL_Renderer*    renderer;
     SDL_Surface*     surface;
     SDL_Texture*     texture;
-    char*           yuvData;
+    IImageParser*    imageParser;
 
     // Initialize application
     int             OnInit();
@@ -61,8 +63,6 @@ private:
     
     // Called to render the app.
     void             OnRender();
-
-    static char * loadYuvData(char *yuvFilePath, int width, int height);
 };
 
 #endif /* SDLActivity_hpp */

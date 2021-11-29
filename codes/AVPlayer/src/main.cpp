@@ -1,8 +1,11 @@
 #include <iostream>
 #include "SDLActivity.hpp"
+#include "parser/YUVImageParser.h"
 
 int main() {
     std::cout << "start!" << sizeof (char) <<"||||||" << std::endl;
     CApp app;
-    return app.OnExecute();
+    IImageParser *parser = new YUVImageParser;
+    parser->loadFile();
+    return app.OnExecute(parser);
 }
