@@ -18,6 +18,8 @@ public:
     }
 
     virtual YUVFileData* loadFile();
+
+    void toR(char *data, int width, int height);
 };
 
 
